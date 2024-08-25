@@ -60,10 +60,6 @@
     "prettier-plugin-astro": "^0.13.0",
     "simple-git-hooks": "^2.11.1"
   },
-  "simple-git-hooks": {
-    "commit-msg": "pnpm exec commitlint --edit $1",
-    "pre-commit": "pnpm exec lint-staged"
-  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx.astro,md,css,json}": "prettier --write"
   }

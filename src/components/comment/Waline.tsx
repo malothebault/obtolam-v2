@@ -14,7 +14,7 @@ export function Waline({ serverURL }: { serverURL: string }) {
       imageUploader: false,
       search: false,
       locale: {
-        placeholder: '发条友善的评论吧（支持 Markdown 语法）…',
+        placeholder: 'Postez un commentaire amical 🙏 (syntaxe Markdown prise en charge)...',
       },
       emoji: ['//unpkg.com/@waline/emojis@1.1.0/bilibili'],
     })

@@ -73,8 +73,8 @@ function SearchPanel() {
             />
           </svg>
           <div>
-            <div className="font-semibold mb-1">抱歉</div>
-            <div className="text-sm">该功能基于 pagefind，请在构建后再次尝试。</div>
+            <div className="font-semibold mb-1">Désolé</div>
+            <div className="text-sm">Cette fonctionnalité est basée sur Pagefind. Veuillez réessayer après la compilation.</div>
           </div>
         </div>
       </div>
@@ -116,14 +116,14 @@ function SearchPanel() {
               d="M11 11v2l-5.327 6H11v2H3v-2l5.326-6H3v-2zm10-8v2l-5.327 6H21v2h-8v-2l5.326-6H13V3z"
             />
           </svg>
-          <div>无内容</div>
+          <div>Je n'ai rien trouvé 😥</div>
         </div>
       </div>
     )
   } else {
     resultList = (
       <>
-        <div className="text-sm px-3 mb-2">找到以下 {results.length} 条结果</div>
+        <div className="text-sm px-3 mb-2">J'ai {results.length} résultats</div>
         {results.map((item) => {
           return (
             <a

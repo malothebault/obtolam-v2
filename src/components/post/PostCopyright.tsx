@@ -22,7 +22,7 @@ export function PostCopyright({
 
   function handleCopyUrl() {
     navigator.clipboard.writeText(url)
-    toast.success('已复制文章链接')
+    toast.success("Lien vers l'article copié !")
   }
 
   useEffect(() => {
@@ -31,24 +31,24 @@ export function PostCopyright({
 
   return (
     <section className="text-xs leading-loose text-secondary">
-      <p>文章标题：{title}</p>
-      <p>文章作者：{author.name}</p>
+      <p>Titre : {title}</p>
+      <p>Auteur : {author.name}</p>
       <p>
-        <span>文章链接：{url}</span>
+        <span>Lien URL ：{url}</span>
         <span role="button" className="cursor-pointer select-none" onClick={handleCopyUrl}>
-          [复制]
+          [Copier]
         </span>
       </p>
-      <p>最后修改时间：{lastModStr}</p>
+      <p>Dernière mise à jour : {lastModStr}</p>
       <hr className="my-3 border-primary" />
       <div>
         <div className="float-right ml-4 my-2">
           <AnimatedSignature />
         </div>
         <p>
-          商业转载请联系站长获得授权，非商业转载请注明本文出处及文章链接，您可以自由地在任何媒体以任何形式复制和分发作品，也可以修改和创作，但是分发衍生作品时必须采用相同的许可协议。
+        Pour toute reproduction commerciale, veuillez contacter le webmaster pour obtenir une autorisation. Pour toute reproduction non commerciale, veuillez indiquer la source de cet article et un lien vers l'article. Vous êtes libre de reproduire et de distribuer l'œuvre sous n'importe quelle forme et dans n'importe quel média, de la modifier et de la créer, à condition d'utiliser le même accord de licence pour la distribution d'œuvres dérivées.
           <br />
-          本文采用
+          Cet article utilise une licence&nbsp;
           <a
             className="hover:underline hover:text-accent underline-offset-2"
             href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
@@ -57,7 +57,6 @@ export function PostCopyright({
           >
             CC BY-NC-SA 4.0
           </a>
-          进行许可。
         </p>
       </div>
     </section>

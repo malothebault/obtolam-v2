@@ -16,14 +16,14 @@ export function Outdate({ lastMod }: { lastMod: Date }) {
     <AnimatePresence>
       {isShow && (
         <motion.div
-          className="flex justify-center text-sm p-4 rounded-lg bg-amber-300/10 border border-amber-300"
+          className="flex justify-start text-sm p-4 rounded-lg bg-amber-300/10 border border-amber-300"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
           <span>
-            这篇文章最后修改于 {getFormattedDate(lastMod)}
-            ，部分内容可能已经不适用，如有疑问可联系作者。
+          Ce billet a été modifié pour la dernière fois le {getFormattedDate(lastMod)}. <br/>
+          Certaines parties peuvent ne plus être d'actualité. Contactez moi si vous avez des questions !
           </span>
         </motion.div>
       )}

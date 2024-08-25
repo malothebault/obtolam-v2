@@ -1,6 +1,6 @@
 import { getCollection } from 'astro:content'
 
-// Obtenir tous les articles
+// 获取所有文章
 async function getAllPosts() {
   const allPosts = await getCollection('posts', ({ data }) => {
     return import.meta.env.PROD ? data.draft !== true : true
@@ -9,7 +9,7 @@ async function getAllPosts() {
   return allPosts
 }
 
-// Obtenir tous les articles，发布日期升序
+// 获取所有文章，发布日期升序
 async function getNewestPosts() {
   const allPosts = await getAllPosts()
 
@@ -18,7 +18,7 @@ async function getNewestPosts() {
   })
 }
 
-// Obtenir tous les articles，发布日期降序
+// 获取所有文章，发布日期降序
 export async function getOldestPosts() {
   const allPosts = await getAllPosts()
 
@@ -27,7 +27,7 @@ export async function getOldestPosts() {
   })
 }
 
-// Obtenir tous les articles，置顶优先，发布日期降序
+// 获取所有文章，置顶优先，发布日期降序
 export async function getSortedPosts() {
   const allPosts = await getAllPosts()
 
@@ -40,7 +40,7 @@ export async function getSortedPosts() {
   })
 }
 
-// Obtenir tous les articles的字数
+// 获取所有文章的字数
 export async function getAllPostsWordCount() {
   const allPosts = await getAllPosts()
 
