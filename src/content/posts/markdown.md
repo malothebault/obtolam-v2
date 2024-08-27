@@ -1,123 +1,123 @@
 ---
-title: Markdown 示例
+title: Exemple de Markdown
 date: 2024-04-01
-summary: 这是一篇 Markdown 文章的示例。展示了 Markdown 的语法和渲染效果。
-category: 例子
+summary: Ceci est un exemple d'article Markdown. Il montre la syntaxe Markdown et le résultat du rendu.
+category: Exemples
 tags: [Markdown]
 ---
 
-下面是在 Astro 中编写 Markdown 内容时，可以使用的一些基本 Markdown 语法示例。
+Voici quelques exemples de syntaxe Markdown de base que vous pouvez utiliser lors de la rédaction de contenu Markdown dans Astro.
 
-## 标题
+## Titres
 
-你应该避免在 Markdown 正文中重复创建文章标题，因为文章标题会根据 `frontmatter` 中 `title` 自动生成。
+Vous devriez éviter de recréer le titre de l'article dans le corps du Markdown, car le titre de l'article sera automatiquement généré à partir du `title` dans le `frontmatter`.
 
-> 避免标题层级过深，一般到三级标题就够了。
+> Évitez une hiérarchie de titres trop profonde, généralement trois niveaux suffisent.
 
-# 一级
+# Niveau 1
 
-## 二级
+## Niveau 2
 
-### 三级 `inline code`
+### Niveau 3 `code en ligne`
 
-#### 四级
+#### Niveau 4
 
-##### 五级
+##### Niveau 5
 
-###### 六级
+###### Niveau 6
 
-## 段落
+## Paragraphes
 
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
 
-使用行尾使用两个空格进行段落内的换行
+Utilisez deux espaces à la fin de la ligne pour un saut de ligne dans le paragraphe
 
 All work and no play makes Jack a dull boy.  
 All work and no play makes Jack a dull boy.
 
-## 图片
+## Images
 
-小尺寸的图片
+Image de petite taille
 
-![图片描述](https://picsum.photos/seed/picsum/250/400)
+![Description de l'image](https://picsum.photos/seed/picsum/250/400)
 
-大尺寸的图片
+Image de grande taille
 
-![图片描述](https://picsum.photos/seed/picsum/1200/900)
+![Description de l'image](https://picsum.photos/seed/picsum/1200/900)
 
-带标题的图片
+Image avec titre
 
-![图片描述](https://picsum.photos/seed/picsum/400/300 '图片标题')
+![Description de l'image](https://picsum.photos/seed/picsum/400/300 "Titre de l'image")
 
-## 强调
+## Emphase
 
-这是**重要内容**，这是*次要内容*
+Ceci est un **contenu important**, ceci est un *contenu secondaire*
 
-## 删除线
+## Barré
 
-~~这是一段被删除的文本。~~
+~~Ceci est un texte barré.~~
 
-## 引用
+## Citations
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+L'élément blockquote représente un contenu cité d'une autre source, optionnellement avec une citation qui doit être dans un élément `footer` ou `cite`, et optionnellement avec des modifications en ligne telles que des annotations et des abréviations.
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
+> **Notez** que vous pouvez utiliser la _syntaxe Markdown_ dans une citation.
 
-嵌套的引用
+Citation imbriquée
 
-> 引用
+> Citation
 >
-> > 嵌套的引用
+> > Citation imbriquée
 
-带脚标的引用
+Citation avec note de bas de page
 
 > Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
+> — Rob Pike[^1]
 
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+[^1]: La citation ci-dessus est extraite de la [conférence](https://www.youtube.com/watch?v=PAAkCSZUG1c) de Rob Pike lors du Gopherfest, le 18 novembre 2015.
 
-## 分割线
+## Ligne horizontale
 
 ---
 
-## 链接
+## Liens
 
-这是内部链接 [Gyoza 使用指南](/posts/guide)
+Ceci est un lien interne [Guide d'utilisation de Gyoza](/posts/guide)
 
-这是外部连接 [React **中文**文档](https://zh-hans.react.dev/)
+Ceci est un lien externe [Documentation React **en français**](https://fr.react.dev/)
 
-自动渲染成连接 <https://github.com>
+Rendu automatique en lien <https://github.com>
 
-邮箱地址 <mail@example.com>
+Adresse e-mail <mail@example.com>
 
-## 表格
+## Tableaux
 
-设置单元格对齐
+Définir l'alignement des cellules
 
-| Name  | Age |  Fruit |
+| Nom   | Âge |  Fruit |
 | :---- | :-: | -----: |
-| Bob   | 27  |  Apple |
-| Alice | 23  | Banana |
+| Bob   | 27  |  Pomme |
+| Alice | 23  | Banane |
 | John  | 28  | Orange |
 
-支持行内 Markdown
+Supporte le Markdown en ligne
 
-| Italics   | Bold     | Code   |
+| Italique  | Gras     | Code   |
 | --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
+| _italique_ | **gras** | `code` |
 
-表格溢出
+Débordement de tableau
 
 | A                                                        | B                                                                                                             | C                                                                                                                                    | D                                                 | E                                                          | F                                                                    |
 | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------- |
 | Lorem ipsum dolor sit amet, consectetur adipiscing elit. | Phasellus ultricies, sapien non euismod aliquam, dui ligula tincidunt odio, at accumsan nulla sapien eget ex. | Proin eleifend dictum ipsum, non euismod ipsum pulvinar et. Vivamus sollicitudin, quam in pulvinar aliquam, metus elit pretium purus | Proin sit amet velit nec enim imperdiet vehicula. | Ut bibendum vestibulum quam, eu egestas turpis gravida nec | Sed scelerisque nec turpis vel viverra. Vivamus vitae pretium sapien |
 
-## 代码块
+## Blocs de code
 
-### Syntax
+### Syntaxe
 
-we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntac, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
+Nous pouvons utiliser 3 backticks ``` sur une nouvelle ligne et écrire le snippet, puis fermer avec 3 backticks sur une nouvelle ligne. Pour mettre en évidence la syntaxe spécifique à un langage, écrivez un mot du nom du langage après les 3 premiers backticks, par exemple html, javascript, css, markdown, typescript, txt, bash
 
 ```html
 <!doctype html>
@@ -136,112 +136,112 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
 const var text = "hello world"
 ```
 
-## KaTeX 公式
+## Formules KaTeX
 
-使用 `$` 符号包裹公式生成行内公式，例如：$E = mc^2$。
+Utilisez le symbole `$` pour encadrer une formule et générer une formule en ligne, par exemple : $E = mc^2$.
 
-使用 `$$` 符号包裹公式来生成独立公式。例如：
+Utilisez le symbole `$$` pour encadrer une formule et générer une formule indépendante. Par exemple :
 
 $$
 e^{i\pi} + 1 = 0
 $$
 
-也可以使用代码块（` ```math `）的方式：
+Vous pouvez également utiliser la méthode du bloc de code (` ```math `) :
 
 ```math
 \oint_{\partial V} \mathbf{E} \cdot d\mathbf{A} = \frac{Q}{\epsilon_0}
 ```
 
-## List Types
+## Types de listes
 
-### Ordered List
+### Liste ordonnée
 
-#### Syntax
-
-```markdown
-1. First item
-2. Second item
-3. Third item
-```
-
-#### Output
-
-1. First item
-2. Second item
-3. Third item
-
-### Unordered List
-
-#### Syntax
+#### Syntaxe
 
 ```markdown
-- List item
-- Another item
-- And another item
+1. Premier élément
+2. Deuxième élément
+3. Troisième élément
 ```
 
-#### Output
+#### Résultat
 
-- List item
-- Another item
-- And another item
+1. Premier élément
+2. Deuxième élément
+3. Troisième élément
 
-### Nested list
+### Liste non ordonnée
 
-#### Syntax
+#### Syntaxe
+
+```markdown
+- Élément de liste
+- Un autre élément
+- Et encore un autre élément
+```
+
+#### Résultat
+
+- Élément de liste
+- Un autre élément
+- Et encore un autre élément
+
+### Liste imbriquée
+
+#### Syntaxe
 
 ```markdown
 - Fruit
-  - Apple
+  - Pomme
   - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
+  - Banane
+- Produits laitiers
+  - Lait
+  - Fromage
 ```
 
-#### Output
+#### Résultat
 
 - Fruit
-  - Apple
+  - Pomme
   - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
+  - Banane
+- Produits laitiers
+  - Lait
+  - Fromage
 
-## Other Elements — abbr, sub, sup, kbd, mark
+## Autres éléments — abbr, sub, sup, kbd, mark
 
-### Syntax
+### Syntaxe
 
 ```markdown
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+<abbr title="Graphics Interchange Format">GIF</abbr> est un format d'image bitmap.
 
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
+Appuyez sur <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Suppr</kbd></kbd> pour terminer la session.
 
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+La plupart des <mark>salamandres</mark> sont nocturnes et chassent les insectes, les vers et d'autres petites créatures.
 ```
 
-#### Output
+#### Résultat
 
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+<abbr title="Graphics Interchange Format">GIF</abbr> est un format d'image bitmap.
 
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
+Appuyez sur <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Suppr</kbd></kbd> pour terminer la session.
 
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+La plupart des <mark>salamandres</mark> sont nocturnes et chassent les insectes, les vers et d'autres petites créatures.
 
 ## Spoiler
 
 ```md
-||hide content||
+||cacher le contenu||
 ```
 
-正常情况下，该内容会隐藏 ||hide content||，鼠标悬浮时才会显示。
+En temps normal, ce contenu sera caché ||cacher le contenu||, et ne s'affichera que lorsque la souris passera dessus.
