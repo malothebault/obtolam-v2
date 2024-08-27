@@ -46,7 +46,7 @@ export default defineConfig({
       rehypeCodeHighlight,
       rehypeTableBlock,
     ],
-    remarkRehype: { footnoteLabel: '参考', footnoteBackLabel: '返回正文' },
+    remarkRehype: { footnoteLabel: 'Sources', footnoteBackLabel: 'Revenir à la citation' },
   },
   vite: {
     build: {
