@@ -16,7 +16,8 @@ export function Waline({ serverURL }: { serverURL: string }) {
       locale: {
         placeholder: 'Postez un commentaire amical 🙏 (syntaxe Markdown prise en charge)...',
       },
-      emoji: ['//unpkg.com/@waline/emojis@1.1.0/bilibili'],
+      emoji: false,//['https://unpkg.com/@waline/emojis@1.2.0/qq'],
+      lang: 'fr',
     })
 
     return () => {

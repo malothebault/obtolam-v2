@@ -37,20 +37,20 @@
         "color": "rgb(212, 70, 56)"
       }
     ],
-    "yiyan": "Ils ne savaient pas que c'était impossible alors ils l'ont fait"
+    "yiyan": "Pssst, pour les articles c'est par ici 👇"
   },
   "color": {
     "accent": [
       { "light": "#F55555", "dark": "#FCCF31" },
       { "light": "#0396FF", "dark": "#ABDCFF" },
-      { "light": "#fb7287", "dark": "#99D8CF" },
-      { "light": "#F072B6", "dark": "#FFF886" },
+      { "light": "#57FA20", "dark": "#99D8CF" },
+      { "light": "#FF9D2E", "dark": "#FFF886" },
       { "light": "#9F44D3", "dark": "#E2B0FF" },
       { "light": "#FF6666", "dark": "#A1CCD1" },
       { "light": "#F6416C", "dark": "#838BC6" },
       { "light": "#32CCBC", "dark": "#90F7EC" },
       { "light": "#33A6B8", "dark": "#79F1A4" },
-      { "light": "#F55555", "dark": "#FCCF31" }
+      { "light": "#F5CD56", "dark": "#FCCF31" }
     ],
     "bg": {
       "primary": { "light": "#ffffff", "dark": "#1c1c1e" },
@@ -76,7 +76,12 @@
       "icon": "icon-archive"
     },
     {
-      "name": ".projets",
+      "name": ".tags",
+      "link": "/tags",
+      "icon": "icon-contacts-book"
+    },
+    {
+      "name": ".apps",
       "link": "/projects",
       "icon": "icon-flask"
     },
@@ -84,18 +89,13 @@
       "name": ".à propos",
       "link": "/about",
       "icon": "icon-ghost"
-    },
-    {
-      "name": ".amis",
-      "link": "/friends",
-      "icon": "icon-hearts"
     }
   ],
   "posts": {
     "perPage": 10
   },
   "footer": {
-    "startTime": "2024-01-01T00:00:00Z"
+    "startTime": "2024-09-01T00:00:00Z"
   },
   "waline": {
     "serverURL": "https://obtolam-comments.vercel.app/"

@@ -8,30 +8,33 @@ function getFriendFullPath(fileName) {
 }
 
 const fileName = await input({
-  message: '请输入文件名称',
+  message: 'Veuillez entrer le nom du fichier',
   validate: (value) => {
     if (!isFileNameSafe(value)) {
-      return '文件名只能包含字母、数字和连字符'
+      return "Le nom du fichier ne peut contenir que des lettres, des chiffres et des traits d'union"
     }
     const fullPath = getFriendFullPath(value)
     if (fs.existsSync(fullPath)) {
-      return `${fullPath} 已存在`
+      return `${fullPath} existe déjà`
     }
     return true
   },
 })
 
 const title = await input({
-  message: '请输入标题',
+  message: 'Veuillez entrer le titre',
 })
+
 const description = await input({
-  message: '请输入描述',
+  message: 'Veuillez entrer la description',
 })
+
 const link = await input({
-  message: '请输入地址',
+  message: "Veuillez entrer l'adresse",
 })
+
 const avatar = await input({
-  message: '请输入头像地址',
+  message: "Veuillez entrer l'adresse de l'avatar",
 })
 
 const content = `title: ${title}
@@ -42,4 +45,4 @@ avatar: ${avatar}
 
 const fullPath = getFriendFullPath(fileName)
 fs.writeFileSync(fullPath, content)
-console.log(`${fullPath} 创建成功`)
+console.log(`${fullPath} créé avec succès`)

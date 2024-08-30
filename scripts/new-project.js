@@ -8,30 +8,33 @@ function getProjectFullPath(fileName) {
 }
 
 const fileName = await input({
-  message: '请输入文件名称',
+  message: 'Veuillez entrer le nom du fichier',
   validate: (value) => {
     if (!isFileNameSafe(value)) {
-      return '文件名只能包含字母、数字和连字符'
+      return "Le nom du fichier ne peut contenir que des lettres, des chiffres et des traits d'union"
     }
     const fullPath = getProjectFullPath(value)
     if (fs.existsSync(fullPath)) {
-      return `${fullPath} 已存在`
+      return `${fullPath} existe déjà`
     }
     return true
   },
 })
 
 const title = await input({
-  message: '请输入项目名称',
+  message: 'Veuillez entrer le nom du projet',
 })
+
 const description = await input({
-  message: '请输入项目描述',
+  message: 'Veuillez entrer la description du projet',
 })
+
 const link = await input({
-  message: '请输入项目地址',
+  message: "Veuillez entrer l'adresse du projet",
 })
+
 const image = await input({
-  message: '请输入预览图片地址',
+  message: "Veuillez entrer l'adresse de l'image de prévisualisation",
 })
 
 const content = `title: ${title}
@@ -42,4 +45,4 @@ image: ${image}
 
 const fullPath = getProjectFullPath(fileName)
 fs.writeFileSync(fullPath, content)
-console.log(`${fullPath} 创建成功`)
+console.log(`${fullPath} créé avec succès`)

@@ -1,6 +1,7 @@
 ---
 title: Exemple de Markdown
-date: 2024-04-01
+date: 2024-09-01
+lastMod: 2024-09-02T23:29:49.820Z
 summary: Ceci est un exemple d'article Markdown. Il montre la syntaxe Markdown et le résultat du rendu.
 category: Exemples
 tags: [Markdown]
@@ -51,7 +52,7 @@ Image avec titre
 
 ## Emphase
 
-Ceci est un **contenu important**, ceci est un *contenu secondaire*
+Ceci est un **contenu important**, ceci est un _contenu secondaire_
 
 ## Barré
 
@@ -103,8 +104,8 @@ Définir l'alignement des cellules
 
 Supporte le Markdown en ligne
 
-| Italique  | Gras     | Code   |
-| --------- | -------- | ------ |
+| Italique   | Gras     | Code   |
+| ---------- | -------- | ------ |
 | _italique_ | **gras** | `code` |
 
 Débordement de tableau
@@ -245,3 +246,23 @@ La plupart des <mark>salamandres</mark> sont nocturnes et chassent les insectes,
 ```
 
 En temps normal, ce contenu sera caché ||cacher le contenu||, et ne s'affichera que lorsque la souris passera dessus.
+
+## Intégrations
+
+Pour intéger du contenu Codepen ou Youtube, on peut utiliser la syntaxe suivante
+
+### Codepen
+
+```md
+::codepen{#dPbmrj author="ricardospalves"}
+```
+
+::codepen{#dPbmrj author="ricardospalves"}
+
+### YouTube
+
+```md
+::youtube{#jNQXAC9IVRw}
+```
+
+::youtube{#jNQXAC9IVRw}
