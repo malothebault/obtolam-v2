@@ -59,7 +59,7 @@ Enjoy it!
 └── tsconfig.json
 ```
 
-网站配置保存在 `config.json` 文件。
+La configuration du site est sauvegardée dans le fichier `config.json`.
 
 ## 🧞 Commands
 
