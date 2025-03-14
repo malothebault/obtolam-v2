@@ -16,16 +16,14 @@ Enjoy it!
 
 ![Preview](https://s2.loli.net/2024/05/06/A9rzC3Uym7RwdQc.webp)
 
-## 🎉 Features
-
-- ✅ 有着规范的 URL 和 OpenGraph 信息，对 SEO 友好
-- ✅ 支持站点地图
-- ✅ 支持 RSS 订阅
-- ✅ 支持夜间模式
-- ✅ 特殊日期变灰
-- ✅ 简单干净的配色和主题
-- ✅ 支持评论系统
-- ✅ 支持代码高亮
+- ✅ SEO-friendly with canonical URL and OpenGraph information
+- ✅ Support for sitemaps
+- ✅ Supports RSS feeds
+- ✅ Night mode support
+- ✅ Graying of special dates
+- ✅ Simple and clean color scheme and theme
+- ✅ Support comment system
+- ✅ Code highlighting support
 
 ## 🔧 Tech Stack
 
@@ -37,7 +35,7 @@ Enjoy it!
 
 ## 📖 Documentation
 
-前往：[Documentation](https://gyoza.lxchapu.com/posts/guide)
+Go to: [Documentation](https://gyoza.lxchapu.com/posts/guide)
 
 ## 🚀 Project Structure
 
@@ -59,7 +57,7 @@ Enjoy it!
 └── tsconfig.json
 ```
 
-网站配置保存在 `config.json` 文件。
+La configuration du site est sauvegardée dans le fichier `config.json`.
 
 ## 🧞 Commands
 
