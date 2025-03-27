@@ -11,12 +11,12 @@
   "author": {
     "name": "Obtolam",
     "twitterId": "@obtolam",
-    "avatar": "https://doodleipsum.com/700x700/abstract?i=f8b1abea359b643310916a38aa0b0562"
+    "avatar": "/icon.svg"
   },
   "hero": {
     "name": "Obtolam",
-    "bio": "Mon blog perso.",
-    "description": "Tout ce qui me passe par la tête",
+    "bio": "Encore un blog perso !",
+    "description": "Mais peut être que vous y trouverez des choses intéressantes... ou pas 🤷‍♂️",
     "socials": [
       {
         "name": "Github",

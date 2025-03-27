@@ -10,14 +10,17 @@ import Highlight from '@/components/Highlight.astro'
   >
     <div class="mt-[120px] lg:mt-0 max-w-[590px]">
       <h1 class="text-3xl text-center lg:text-left text-balance">
-        Bienvenue sur <Highlight class="font-bold">{hero.name}</Highlight>👋<br />{hero.bio}
+        Bienvenue sur <Highlight class="font-bold">{hero.name}</Highlight>👋
       </h1>
+      <h2 class="text-2xl text-center lg:text-left text-balance italic">
+        {hero.bio}
+      </h2>
       <div class="text-sm text-secondary mt-3 text-center lg:text-left">{hero.description}</div>
       <!-- <SocialList className="mt-[60px]" client:load /> -->
     </div>
     <div class="mt-20 lg:mt-0">
       <div
-        class="size-[200px] lg:size-[300px] rounded-full overflow-hidden border border-primary bg-zinc-100 dark:bg-zinc-800"
+        class="size-[200px] lg:size-[300px] rounded-full overflow-hidden border border-primary bg-white-100 dark:bg-zinc-800"
       >
         <img class="size-full" src={author.avatar} alt="Site owner avatar" loading="lazy" />
       </div>
