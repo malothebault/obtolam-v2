@@ -5,8 +5,10 @@
     "description": "Mon blog perso.",
     "keywords": "blog,Astro,science,vie pratique",
     "lang": "fr-FR",
-    "favicon": "/favicon.ico",
-    "appleTouchIcon": "/apple-touch-icon.png"
+    "favicon": "/img/favicon.ico",
+    "favicon16": "/img/favicon-16x16.png",
+    "favicon32": "/img/favicon-32x32.png",
+    "appleTouchIcon": "/img/apple-touch-icon.png"
   },
   "author": {
     "name": "Obtolam",
